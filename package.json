@@ -1,0 +1,12 @@
+{
+  "name": "layout-calendar",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.1",
+    "parcel": "^2.12.0"
+  }
+}
