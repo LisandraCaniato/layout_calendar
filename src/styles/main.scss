@@ -3,8 +3,15 @@ $border-size: 1px;
 $gap: 1px;
 $padding: 10px;
 $hover-move: 20px;
+<<<<<<< HEAD
 $day-bg: #eee;
 $hover-bg: #ffbfcb;
+=======
+
+$day-bg: #eee;
+$hover-bg: #ffbfcb;
+
+>>>>>>> main
 $font-size: 30px;
 $columns: 7;
 
@@ -14,20 +21,41 @@ body {
   align-items: center;
   height: 100vh;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .calendar {
   display: flex;
   flex-wrap: wrap;
   gap: $gap;
   padding: $padding;
+<<<<<<< HEAD
   width: calc(#{$columns * ($day-size + $border-size * 2)} + #{$gap * ($columns - 1)});
 }
+=======
+  width: calc(#{$columns * $day-size} + #{$gap * ($columns - 1)});
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+>>>>>>> main
 .calendar__day {
   width: $day-size;
   height: $day-size;
   background: $day-bg;
   border: $border-size solid black;
+<<<<<<< HEAD
   position: relative;
   transition: 0.5s;
+=======
+  box-sizing: border-box; 
+  position: relative;
+  transition: 0.5s;
+
+>>>>>>> main
   &:hover {
     background: $hover-bg;
     cursor: pointer;
@@ -35,6 +63,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 @for $i from 1 through 31 {
   .calendar__day:nth-child(#{$i})::before {
     content: "#{$i}";
@@ -47,6 +79,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 $start-days: (
   mon: 1,
   tue: 2,
@@ -60,15 +96,27 @@ $start-days: (
 @each $name, $offset in $start-days {
   .calendar--#{$name} {
     .calendar__day:nth-child(1) {
+<<<<<<< HEAD
       margin-left: calc(#{$offset} * (#{$day-size + $border-size * 2 + $gap}));
+=======
+     margin-left: calc(#{$offset} * $day-size);
+>>>>>>> main
     }
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 @for $len from 28 through 31 {
   .calendar--#{$len} {
     .calendar__day:nth-child(n + #{$len + 1}) {
       display: none;
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main

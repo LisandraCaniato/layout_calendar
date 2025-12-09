@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Calendar
 
 Display a calendar in the middle of the screen (both horizontally and vertically). Use SCSS and follow BEM. Don't use Javascript.
@@ -46,3 +47,6 @@ reflects in changing calendar layout
 - [ ] Each day has no modifiers, only class (eg. calendar__day)
 - [ ] All `Typical Mistakes` from `BEM` lesson theory are checked.
 - [ ] Code follows all the [Code Style Rules ❗️](https://mate-academy.github.io/layout_task-guideline/html-css-code-style-rules)
+=======
+# layout-calendar
+>>>>>>> main
